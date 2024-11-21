@@ -1,0 +1,35 @@
+/* HomePage.css */
+
+/* Header container with Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers the items vertically */
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Example background color */
+    border-bottom: 1px solid #ddd; /* Optional: add a border to the bottom */
+    background-color: bisque;
+  }
+  
+  /* Left section of the header */
+  .left {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Right section with links */
+  .right {
+    display: flex;
+    gap: 20px; /* Space between the links */
+  }
+  
+  .link {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
