@@ -1,0 +1,14 @@
+.recipe-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recipe-card{
+    width:200px
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+}
