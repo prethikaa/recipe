@@ -5,7 +5,11 @@ import Header from "./Layouts/Header";
 import ListPage from "./ListPage";
 
 const HomePage = () => {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <ListPage />
+    </div>
+  );
 };
 
 export default HomePage;

@@ -10,11 +10,11 @@ const App = () => {
     <Router>
       <div>
         <Header />
-        <Routes> {/* Use Routes instead of Switch */}
+        <Routes>
+          {" "}
+          {/* Use Routes instead of Switch */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/all-recipes" element={<ListPage />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

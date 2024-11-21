@@ -1,0 +1,107 @@
+/* Modal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for modal */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000;
+    padding: 20px; /* Padding to make sure modal doesn't touch screen edges */
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px; /* Set max-width to make it wider */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-height: 90vh; /* Limit max height */
+    margin-top: 50px; /* Add space at the top */
+  }
+  
+  .recipe-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .recipe-image {
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .recipe-text {
+    flex-grow: 1;
+  }
+  
+  .close-button {
+
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background: darkred;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  ul,
+  ol {
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  
+  ul li,
+  ol li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  strong {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust for smaller screens */
+    .modal-content {
+      max-width: 95%;
+      margin-top: 20px; /* Less space on mobile */
+    }
+  
+    .recipe-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .recipe-image {
+      margin-bottom: 20px;
+      width: 100%; /* Image takes full width on small screens */
+    }
+  }
+  
