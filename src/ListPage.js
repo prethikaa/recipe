@@ -135,7 +135,7 @@ const ListPage = () => {
             ))}
           </div>
         ) : (
-          <p>No recipes found.</p>
+          <p>No recipes found. {error}</p>
         )}
       </div>
 
